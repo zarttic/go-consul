@@ -16,8 +16,10 @@ import (
 	"net"
 )
 
-// 2.2定义类
+// 2.2 定义类
 type Person struct {
+	//继承服务端的代码
+	pb_gen.UnimplementedHelloServer
 }
 
 // 2.3绑定方法

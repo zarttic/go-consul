@@ -49,6 +49,7 @@ func main() {
 	defer dial.Close()
 	//2.初始化grpc客户端
 	client := pb_gen.NewHelloClient(dial)
+
 	//3.调用远程函数
 	p, err := client.SayHello(context.TODO(), &pb_gen.Person{
 		Name: "jxc",
