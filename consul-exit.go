@@ -24,4 +24,5 @@ func main() {
 	}
 	//3 注销服务
 	_ = client.Agent().ServiceDeregister("test_gRPC")
+	fmt.Println("服务退出")
 }

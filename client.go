@@ -11,13 +11,14 @@ import (
 	"context"
 	"fmt"
 	"github.com/hashicorp/consul/api"
-	"go-consul/pb_gen"
+	pb_gen "go-consul/pb_gen"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"strconv"
 )
 
 func main() {
+	fmt.Println("客户端 开启")
 
 	//consul
 	//1.初始化consul配置

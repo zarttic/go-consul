@@ -11,7 +11,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/hashicorp/consul/api"
-	"go-consul/pb_gen"
+	pb_gen "go-consul/pb_gen"
 	"google.golang.org/grpc"
 	"net"
 )
@@ -28,6 +28,7 @@ func (Person) SayHello(ctx context.Context, person *pb_gen.Person) (*pb_gen.Pers
 	return person, nil
 }
 func main() {
+	fmt.Println("服务端 开启")
 	//注册consul
 	//1.初始化consul配置
 	config := api.DefaultConfig()

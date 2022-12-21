@@ -1,7 +1,7 @@
 //指定当前语法版本 (默认为proto2)
 syntax = "proto3";
 //option go_package = "path;name"; path -> 地址 name -> 所属包名
-option go_package = "../pb_gen";
+option go_package = "./pb_gen;pb";
 //指定生成文件的package
 package pb;
 //消息 传输的对象 定义传输的数据格式 类似于struct
