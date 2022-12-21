@@ -6,11 +6,13 @@ init:
 	@go get -u google.golang.org/protobuf/proto
 	@go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 	@go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-	@go mod tidy
 .PHONY: update
 update:
 	@go get -u
 
+.PHONY: tidy
+tidy:
+	@go mod tidy
 
 .PHONY: proto
 proto:
