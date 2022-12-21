@@ -1,8 +1,10 @@
 # go-consul
 gRPC + consul测试 食用指南
 > [gRPC官网](https://grpc.io/)
->
-具体内容查看`Makefile`文件
+> 
+> [Consul官网](https://www.consul.io/)
+> 
+
 > 
 > 前置
 安装依赖 
@@ -36,4 +38,4 @@ make client
 ```shell
 make exit
 ```
-
+> 具体内容查看`Makefile`文件
